@@ -6,7 +6,7 @@ router.get('/', (req, res) => {
     // access our User model and run findAll method
     User.findAll({
         // hiding the clients password, and not returning it
-        attributes: { exclude: ['password']}
+        attributes: { exclude: ['password']},
     })
     .then(dbUserData => res.json(dbUserData))
     .catch(err => {
@@ -55,6 +55,7 @@ router.post('/', (req, res) => {
 router.put('/:id', (req, res) => {
     //if req.body has exact key/values pairs to match the model, you can just use `req.body` instead
     User.update(req.body, {
+        individualHooks: true, 
         where: {
             id: req.params.id
         }
