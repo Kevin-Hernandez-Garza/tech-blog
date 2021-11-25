@@ -16,21 +16,29 @@
 </head>
 <body>
     <div class="container-fluid">
-        <nav class="navbar navbar-light bg-white container-fluid border-bottom">
-        <a class="navbar-brand" href="/">Tech-Blog</a>
-        </nav>
+        <ul class="nav nav-tabs">
+        <li class="nav-item">
+        <a class="nav-link active" href="/">Tech-Blog</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/login">login</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+        </li>
+        </ul>
 
-        <main>
+        <main class="container-fluid">
             {{{body}}}
         </main>
 
-        <div>
-        <footer class="d-flex flex-wrap justify-content-around align-items-center py-3 my-4 border-top fixed-bottom">
+        
+        <footer class="footer d-flex flex-wrap justify-content-around align-items-center py-3 my-4 border-top">
         
         <span class="text-muted">&copy; 2021 Tech-Blog, Inc</span>
         
         </footer>
-        </div>
+        
     </div>
 </body>
 </html>
