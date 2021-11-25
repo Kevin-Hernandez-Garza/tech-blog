@@ -21,17 +21,18 @@
         <a class="nav-link active" href="/">Tech-Blog</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="/login">login</a>
+        <a class="nav-link" id="logout" href="/logout">logout</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="/login">login</a>
         </li>
         </ul>
 
-        <main class="container-fluid">
-            {{{body}}}
-        </main>
-
+        <div class="container-fluid">
+            <main>
+                {{{body}}}
+            </main>
+        </div>
         
         <footer class="footer d-flex flex-wrap justify-content-around align-items-center py-3 my-4 border-top">
         
@@ -40,5 +41,6 @@
         </footer>
         
     </div>
+    <script src="/javascript/logout.js"></script>
 </body>
 </html>
