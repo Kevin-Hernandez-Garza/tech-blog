@@ -1,12 +1,12 @@
-<div class="comments">
+<ul class="comments list-group list-group-flush">
   {{#each this}}
-  <section class="comment">
+  <li class="comment list-group-item list-group-item-action">
     <div class="meta">
       {{user.username}} on {{format_date created_at}}
     </div>
     <div class="text">
       {{comment_text}}
     </div>
-  </section>
+  </li>
   {{/each}}
-</div>
+</ul>
