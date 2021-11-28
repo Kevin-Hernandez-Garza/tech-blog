@@ -16,23 +16,26 @@
 </head>
 <body>
     <div class="container-fluid">
-        <ul class="nav nav-tabs">
+        {{!-- <ul class="nav nav-tabs">
         <li class="nav-item">
         <a class="nav-link active" href="/">Tech-Blog</a>
         </li>
-        {{#if loggedIn}}
-        <li class="nav-item">
-        <a class="nav-link" id="logout" href="/dashboard">dashboard</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" id="logout" href="/logout">logout</a>
-        </li>
-        {{else}}
-        <li class="nav-item">
-        <a class="nav-link" href="/login">login</a>
-        </li>
-        {{/if}}
-        </ul>
+        
+        </ul> --}}
+        <header>
+            <h1>
+                <a href="/">Tech Blog</a>
+            </h1>
+
+            <nav>
+            {{#if loggedIn}}
+            <a href="/dashboard">dashboard</a>
+            <button id="logout" class="btn-no-style">logout</button>
+            {{else}}
+            <a href="/login">login</a>
+            {{/if}}
+            </nav>
+        </header>
 
         <div class="container-fluid">
             <main>
