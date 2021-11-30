@@ -17,7 +17,7 @@
 ## Table of Contents
 
 - [Built-With 🎮](#built-with)
-- [Screenshot 🎬](#screeshot)
+- [Screenshot 🎬](#screenshot)
 - [Link 🧑🏻‍💻](#link)
 - [Contribution 👾](#contribution)
 - [Contact 📟](#contact-me/questions)
